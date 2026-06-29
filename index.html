@@ -1868,6 +1868,195 @@ body.dark-mode .btn.spell-learn-outline:hover{
 body.dark-mode .item-qty-badge,body.dark-mode .qty-inline{background:#0b1620!important;border-color:#31506e!important;color:#c7d7e7!important;}
 @media(max-width:980px){.equipment-modal-grid-top{grid-template-columns:1fr 120px!important}.spell-card{grid-template-columns:1fr!important}.spell-actions-rail{grid-column:1!important;grid-row:auto!important;flex-direction:row!important}.spell-summary-row{grid-template-columns:1fr!important}}
 
+
+
+/* v7.5 — Light Mode Suave: reduz branco puro sem alterar o Dark Mode */
+body:not(.dark-mode){
+  --bg:#E6EDF1;
+  --panel:#F6F9FB;
+  --panel2:#EEF4F7;
+  --rail:#DDE7ED;
+  --ink:#15212C;
+  --muted:#5D6E7D;
+  --line:#C1D0DB;
+  --line2:#96ABBC;
+  --accent:#B74722;
+  --accent2:#F7E6DF;
+  --shadow:0 8px 20px rgba(21,33,44,.09);
+  background:var(--bg)!important;
+  color:var(--ink)!important;
+}
+body:not(.dark-mode) html,
+body:not(.dark-mode) .main,
+body:not(.dark-mode) .main-area,
+body:not(.dark-mode) .tab-stage,
+body:not(.dark-mode) .tab-stage-v68,
+body:not(.dark-mode) .content,
+body:not(.dark-mode) .extra-tab-inner{
+  background:var(--bg)!important;
+}
+body:not(.dark-mode) .topbar,
+body:not(.dark-mode) .sheet-tabs,
+body:not(.dark-mode) .tabs{
+  background:#F2F6F8!important;
+  border-color:var(--line)!important;
+}
+body:not(.dark-mode) .topbar{border-bottom-color:var(--accent)!important;}
+body:not(.dark-mode) .card,
+body:not(.dark-mode) .extra-card,
+body:not(.dark-mode) .header-card,
+body:not(.dark-mode) .skill-modal-box,
+body:not(.dark-mode) .save-modal-card,
+body:not(.dark-mode) .weapon-modal-card,
+body:not(.dark-mode) .equipment-modal-card,
+body:not(.dark-mode) .spell-modal-card,
+body:not(.dark-mode) .turn-card,
+body:not(.dark-mode) .campaign-notes-card,
+body:not(.dark-mode) .spell-cycle-card,
+body:not(.dark-mode) .weapon-summary-card,
+body:not(.dark-mode) .equipment-item-card,
+body:not(.dark-mode) .potion-card,
+body:not(.dark-mode) .equip-slot-card,
+body:not(.dark-mode) .form-card{
+  background:var(--panel)!important;
+  border-color:var(--line)!important;
+  box-shadow:var(--shadow)!important;
+}
+body:not(.dark-mode) .card-h,
+body:not(.dark-mode) .extra-card-h,
+body:not(.dark-mode) .skill-modal-h,
+body:not(.dark-mode) .save-modal-head,
+body:not(.dark-mode) .weapon-modal-head,
+body:not(.dark-mode) .equipment-modal-head,
+body:not(.dark-mode) .spell-modal-head,
+body:not(.dark-mode) .spell-cycle-head,
+body:not(.dark-mode) .collapsible-card-head,
+body:not(.dark-mode) .section-title,
+body:not(.dark-mode) .panel-title{
+  background:#DFEAF1!important;
+  border-color:var(--line)!important;
+  color:var(--ink)!important;
+}
+body:not(.dark-mode) .card-b,
+body:not(.dark-mode) .extra-card-b,
+body:not(.dark-mode) .profile,
+body:not(.dark-mode) .level-box,
+body:not(.dark-mode) .save-card,
+body:not(.dark-mode) .rail-stat,
+body:not(.dark-mode) .attr-card,
+body:not(.dark-mode) .derived,
+body:not(.dark-mode) .derived-fixed,
+body:not(.dark-mode) .hp-box,
+body:not(.dark-mode) .coin,
+body:not(.dark-mode) .lp-card,
+body:not(.dark-mode) .coin-card,
+body:not(.dark-mode) .weapon-pill,
+body:not(.dark-mode) .equipment-item-pill,
+body:not(.dark-mode) .equipment-item-effect,
+body:not(.dark-mode) .spell-card,
+body:not(.dark-mode) .spell-empty,
+body:not(.dark-mode) .spell-daily-field,
+body:not(.dark-mode) .spell-percent-field,
+body:not(.dark-mode) .turn-table-wrap,
+body:not(.dark-mode) .table-scroll,
+body:not(.dark-mode) .thaco-table,
+body:not(.dark-mode) .extra-table,
+body:not(.dark-mode) .character-equip-board,
+body:not(.dark-mode) .backpack-panel,
+body:not(.dark-mode) .equipment-panel,
+body:not(.dark-mode) .potion-summary-card,
+body:not(.dark-mode) .potion-empty,
+body:not(.dark-mode) .weapon-empty{
+  background:var(--panel2)!important;
+  border-color:var(--line)!important;
+  color:var(--ink)!important;
+}
+body:not(.dark-mode) input,
+body:not(.dark-mode) select,
+body:not(.dark-mode) textarea,
+body:not(.dark-mode) .slot-select{
+  background:#FAFCFD!important;
+  color:var(--ink)!important;
+  border-color:var(--line2)!important;
+}
+body:not(.dark-mode) input:focus,
+body:not(.dark-mode) select:focus,
+body:not(.dark-mode) textarea:focus,
+body:not(.dark-mode) .slot-select:focus{
+  border-color:var(--accent)!important;
+  box-shadow:0 0 0 3px rgba(183,71,34,.16)!important;
+}
+body:not(.dark-mode) ::placeholder{color:#6B7B88!important;opacity:1!important;}
+body:not(.dark-mode) .sticker-slot,
+body:not(.dark-mode) .class-sticker-frame{
+  background:linear-gradient(180deg,#FAFCFD,#EEF4F7)!important;
+  border-color:var(--line)!important;
+}
+body:not(.dark-mode) .btn{
+  background:#F7FAFC!important;
+  color:var(--ink)!important;
+  border-color:#7F98AC!important;
+}
+body:not(.dark-mode) .btn:hover{
+  background:#EEF4F7!important;
+  border-color:var(--accent)!important;
+}
+body:not(.dark-mode) .btn.primary{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+  color:#FFFFFF!important;
+}
+body:not(.dark-mode) .btn.primary:hover{background:#A6401F!important;border-color:#A6401F!important;}
+body:not(.dark-mode) .sheet-tab.active,
+body:not(.dark-mode) .tab.active{
+  background:var(--accent2)!important;
+  color:#9A3719!important;
+  border-color:#E0B9A9!important;
+}
+body:not(.dark-mode) .radio-pill input:checked+span,
+body:not(.dark-mode) .align-btn.active,
+body:not(.dark-mode) .icon-radio.active,
+body:not(.dark-mode) .sign-choice.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  border-color:var(--accent)!important;
+}
+body:not(.dark-mode) .heart{background:#F7FAFC!important;border-color:#B6C5D0!important;color:#B8C3CC!important;}
+body:not(.dark-mode) .heart.used{background:#25313C!important;color:#fff!important;border-color:#25313C!important;}
+body:not(.dark-mode) .spell-summary-pill,
+body:not(.dark-mode) .spell-spells-count,
+body:not(.dark-mode) .spell-total-chip,
+body:not(.dark-mode) .cycle-chip{
+  background:#EEF4F7!important;
+  color:#25313C!important;
+  border-color:var(--line)!important;
+}
+body:not(.dark-mode) .mini-fire,
+body:not(.dark-mode) .fire-orb.active,
+body:not(.dark-mode) .mini-fire.active{
+  background:#C04A24!important;
+  border-color:#A6401F!important;
+  color:#fff!important;
+}
+body:not(.dark-mode) .btn.damage-btn,
+body:not(.dark-mode) .damage-btn{border-color:#B35E5A!important;background:#F7FAFC!important;color:#111!important;}
+body:not(.dark-mode) .btn.damage-btn:hover,
+body:not(.dark-mode) .damage-btn:hover{background:#F3E4E2!important;border-color:#A84E4E!important;}
+body:not(.dark-mode) .btn.heal-btn,
+body:not(.dark-mode) .heal-btn{border-color:#4A9D63!important;background:#F7FAFC!important;color:#111!important;}
+body:not(.dark-mode) .btn.heal-btn:hover,
+body:not(.dark-mode) .heal-btn:hover{background:#EAF7EE!important;border-color:#4A9D63!important;}
+body:not(.dark-mode) .btn.long-rest-btn,
+body:not(.dark-mode) .long-rest-btn{border-color:#6B8FAE!important;background:#F7FAFC!important;color:#111!important;}
+body:not(.dark-mode) .btn.long-rest-btn:hover,
+body:not(.dark-mode) .long-rest-btn:hover{background:#E8F1F7!important;border-color:#4E789C!important;}
+body:not(.dark-mode) .muted,
+body:not(.dark-mode) .hint,
+body:not(.dark-mode) .identity-sub,
+body:not(.dark-mode) .card-h .mini,
+body:not(.dark-mode) .derived small,
+body:not(.dark-mode) .field span{color:var(--muted)!important;}
+
 </style>
 </head>
 <body>
